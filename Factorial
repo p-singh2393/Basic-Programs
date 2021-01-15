@@ -1,0 +1,25 @@
+"""1.factorial """
+
+# Recursive Method
+
+def findfact(x):
+    return 1 if (x == 0 or x == 1) else (x*findfact(x-1))
+    n = int(input("enter the number"))
+    print(findfact(n))
+    
+#Iterative method
+
+def findfactitr(x):
+    if x < 0:
+        return print("Negative number")
+    elif x == 0:
+        return print("one")
+    else:
+        f = 1
+        while x > 1:
+            f = f*x
+            x -= 1
+        return print(f)
+
+findfactitr(0)
+
