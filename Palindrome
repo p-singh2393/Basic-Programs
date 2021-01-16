@@ -1,0 +1,21 @@
+#Palindrome
+
+def ispalin(x):
+    str = ""
+    for i in x:
+        str = i + str
+    if x == str:
+        print("palindrome")
+    else:
+        print("Not Palindrome")
+
+ispalin("all")
+
+
+def ispalindrome(str):
+    #slice(start, end, step)
+    strcheck = str[::-1]
+    print(strcheck)
+    return print(str == strcheck)
+
+ispalindrome("prakash")
