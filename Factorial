@@ -23,3 +23,30 @@ def findfactitr(x):
 
 findfactitr(0)
 
+
+#Using oops
+
+class fact:
+    objCount = 0
+    def __init__(self):
+        fact.objCount+=1
+
+    def  findfact(self,x):
+        if x < 0:
+            return print("Negative")
+        elif x == 1:
+            return print(1)
+        else:
+            f=1
+            while x > 1:
+                f = f*x
+                x-=1
+            return print(f)
+
+
+
+f1 = fact()
+f1.findfact(5)
+f2 = fact()
+f2.findfact(6)
+print(fact.objCount)
