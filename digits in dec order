@@ -1,0 +1,14 @@
+num = 123304670
+p=0 
+rem=0
+for i in range(9,-1,-1):
+    p = num
+    while p!=0:
+        rem = p%10
+        if (rem == i):
+            print(rem,end="")
+        p=p//10
+
+# Best Practice
+
+return int("".join(sorted(str(num),reverse = True)))
